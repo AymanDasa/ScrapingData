@@ -19,13 +19,6 @@ def print_g(text):
     print(f"{ok}{text}{x}")
 
 
-def print_o(text):
-    # Use print_g to change output color Warning orange
-    orange = Color.W
-    x = Color.X
-    print(f"{orange}{text}{x}")
-
-
 if __name__ == '__main__':
     os.system('clear')  # Clear the screen
     i = 0  # Empty counter
@@ -63,8 +56,6 @@ if __name__ == '__main__':
                     Image = columns[3].contents[1]['src']
                     Unit = columns[4].text.replace(u'\xa0', u'')
                     line_list = [Code, Description, Image, Unit]
-                else:
-                    continue
             item_list.append(line_list)
 
     # Save list on CSV  File
