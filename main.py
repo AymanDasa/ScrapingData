@@ -67,7 +67,7 @@ if __name__ == '__main__':
                     continue
             item_list.append(line_list)
 
-    # Save list on CSV File
+    # Save list on CSV  File
     fields = ['Code', 'Description', 'Image', 'Unit']
     with open('GFG', 'w') as f:
         write = csv.writer(f)
