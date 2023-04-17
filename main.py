@@ -63,7 +63,9 @@ if __name__ == '__main__':
                     Image = columns[3].contents[1]['src']
                     Unit = columns[4].text.replace(u'\xa0', u'')
                     line_list = [Code, Description, Image, Unit]
-                    item_list.append(line_list)
+                else:
+                    continue
+            item_list.append(line_list)
 
     # Save list on CSV File
     fields = ['Code', 'Description', 'Image', 'Unit']
